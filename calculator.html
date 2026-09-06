@@ -56,6 +56,36 @@
           <article class="result-card gain-card"><div class="result-top"><span class="result-icon">↑</span><span class="result-label">GAIN WEIGHT</span></div><div class="calories"><span id="gain-calories">2,480</span><small> kcal / day</small></div><p class="result-description">A considered surplus to support strength and healthy growth.</p><div class="result-bar"><span style="width: 100%"></span></div><span class="result-tag">+ 300 kcal</span></article>
         </div>
         <div class="results-footer"><div class="tip-mark">✳</div><p><strong>A little perspective</strong><br />These numbers are a helpful estimate, not a rulebook. Your needs can shift day to day — listen to your body.</p><a href="#calorie-form">Recalculate <span>↗</span></a></div>
+        <div class="insights-grid" aria-label="Additional health insights">
+          <article class="insight-panel stats-panel">
+            <div class="insight-heading"><div><p class="card-kicker">YOUR CONTEXT</p><h3>Beyond calories</h3></div><span class="insight-symbol">◌</span></div>
+            <div class="stat-list">
+              <div class="stat-row"><span>Basal metabolic rate</span><strong><span id="bmr-value">—</span> <small>kcal</small></strong></div>
+              <div class="stat-row"><span>Body mass index</span><strong><span id="bmi-value">—</span> <small id="bmi-label">—</small></strong></div>
+              <div class="stat-row"><span>Healthy weight range</span><strong id="healthy-range">—</strong></div>
+              <div class="stat-row"><span>Suggested water</span><strong><span id="water-value">—</span> <small>/ day</small></strong></div>
+            </div>
+          </article>
+          <article class="insight-panel macros-panel">
+            <div class="insight-heading"><div><p class="card-kicker">A SIMPLE SPLIT</p><h3>Daily macros</h3></div><span class="insight-symbol">✦</span></div>
+            <p class="insight-note">A balanced starting point based on your maintenance target.</p>
+            <div class="macro-bars">
+              <div class="macro-item"><div class="macro-label"><span>Protein</span><strong><span id="protein-value">—</span>g</strong></div><div class="macro-track"><span class="protein-fill" id="protein-bar"></span></div></div>
+              <div class="macro-item"><div class="macro-label"><span>Carbohydrates</span><strong><span id="carbs-value">—</span>g</strong></div><div class="macro-track"><span class="carbs-fill" id="carbs-bar"></span></div></div>
+              <div class="macro-item"><div class="macro-label"><span>Fat</span><strong><span id="fat-value">—</span>g</strong></div><div class="macro-track"><span class="fat-fill" id="fat-bar"></span></div></div>
+            </div>
+          </article>
+        </div>
+        <div class="result-tools" aria-label="Result actions">
+          <button class="tool-button primary-tool" id="save-result" type="button">Save this result <span>＋</span></button>
+          <button class="tool-button" id="copy-result" type="button">Copy summary <span>⌘</span></button>
+          <button class="tool-button" id="print-result" type="button">Print <span>↗</span></button>
+          <span class="tool-status" id="tool-status" role="status" aria-live="polite"></span>
+        </div>
+        <div class="saved-results" id="saved-results" hidden>
+          <div class="saved-heading"><p class="card-kicker">ON THIS DEVICE</p><h3>Saved check-ins</h3><button class="clear-saves" id="clear-saves" type="button">Clear all</button></div>
+          <div class="saved-list" id="saved-list"></div>
+        </div>
       </section>
 
       <footer class="footer"><span>CALORY / 2024</span><span>Made for better everyday energy</span><span>Not medical advice</span></footer>
